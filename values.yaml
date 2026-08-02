@@ -1,0 +1,3 @@
+deployment:
+  imageRepo: anuragbojja/catalogue
+  imageVersion: v1
