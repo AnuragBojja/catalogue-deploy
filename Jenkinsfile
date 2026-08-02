@@ -23,8 +23,7 @@ pipeline {
             steps{
                 withAWS(region: 'us-east-1', credentials: 'aws-cred'){
                     script{
-                        // aws eks update-kubeconfig --region "${AWS_REGION}" --name "${PROJECT}-${params.ENVIRONMENT}-EKS"
-                        echo "${PROJECT}-${params.ENVIRONMENT}-EKS"
+                        sh "aws eks update-kubeconfig --region '${AWS_REGION}" --name "${PROJECT}-${params.ENVIRONMENT}-EKS'"
                     }
                 }
             }
