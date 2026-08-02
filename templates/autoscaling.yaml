@@ -1,7 +1,7 @@
 apiVersion: autoscaling/v2
 kind: HorizontalPodAutoscaler
 metadata:
-  name: catalogue
+  name: catalogue-dev
   namespace: roboshop
   labels:
     project: roboshop
@@ -11,7 +11,7 @@ spec:
   scaleTargetRef:
     apiVersion: apps/v1
     kind: Deployment
-    name: catalogue
+    name: catalogue-dev
   minReplicas: 1
   maxReplicas: 3
   metrics:
