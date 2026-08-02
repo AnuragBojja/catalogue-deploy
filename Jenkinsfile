@@ -5,9 +5,11 @@ def configMap = [
     component: "catalogue"
 ]
 
-if ( ! env.BRANCH_NAME.equalsIgnoreCase("main") ){
-    EKSDeploy(configMap)
-}
-else {
-    echo "need permision"
-}
+EKSDeploy(configMap)
+
+// if ( ! env.BRANCH_NAME.equalsIgnoreCase("main") ){
+//     EKSDeploy(configMap)
+// }
+// else {
+//     echo "need permision"
+// }
