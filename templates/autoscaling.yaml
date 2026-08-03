@@ -1,8 +1,8 @@
 apiVersion: autoscaling/v2
 kind: HorizontalPodAutoscaler
 metadata:
-  name: catalogue-dev
-  namespace: roboshop
+  name: catalogue
+  namespace: roboshop-dev
   labels:
     project: roboshop
     service: catalogue
